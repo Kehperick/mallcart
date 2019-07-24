@@ -47,7 +47,7 @@ export class MainSlideComponent implements OnInit {
     });
   }
 
-  public carouselTileLoad(j) {
+  public carouselTileLoad(j) {  
         this.carouselTiles[j].push(
           this.imgags[j]
         );
