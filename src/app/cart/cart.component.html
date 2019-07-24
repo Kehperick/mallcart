@@ -1,0 +1,83 @@
+<mat-toolbar color="primary" fxHide fxShow.xs="true">
+    <button mat-icon-button>
+        <mat-icon class="mat-18">arrow_back</mat-icon>
+    </button><span>cart</span>
+</mat-toolbar>
+<div class="main" fxLayout="row wrap" fxLayoutAlign="center center">
+<div class="left_container" fxFlex="30" fxShow fxHide.sm="true" fxHide.xs="true" fxHide.md="true" fxLayout="row" fxLayoutAlign="center start">
+<div class="summar_container" fxFlex="90" fxLayout="row"fxLayoutAlign="center start">
+<mat-card fxFlex="100">
+    <mat-card-header>
+        <mat-card-title>SUMMARY</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <mat-list >
+          <mat-list-item >
+             TOTAL PRICE- <span style="position: absolute;right: 0;">60000FCFA</span>
+          </mat-list-item>
+          <mat-list-item >
+              TOTAL PRODUCT- <span style="position: absolute;right: 0;">4</span>
+           </mat-list-item>
+           <mat-list-item >
+             DISCOUNT GIVEN-<span style="position: absolute;right: 0;">50%</span>
+           </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <a href="" mat-button class="button-height" color="primary" >CHECKOUT NOW</a>
+        
+    </mat-card-actions>
+    <mat-card-footer>
+        
+    </mat-card-footer>
+</mat-card>
+</div>
+</div>
+<div class="right_container" fxFlex="70" fxFlex.sm="100" fxFlex.xs="100" fxFlex.md="100" >
+  <mat-card>
+      <mat-card-header>
+          <mat-card-title>Cart(0)</mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <div class="item" fxLayout="column "  [ngClass.xs]="{'xtra-smallscreen': 'true'}">
+          <div class="header" fxFlex="20"  class="primary-text mat-subheading-2"
+           [ngClass.xs]="{'small-header': 'true'}"
+           >
+            SAMSUNG GALAXY S7 SALE JUST...
+          </div>
+          <div class="content" fxFlex="80" fxLayout="row wrap">
+            <div fxFlex="30" class="white" fxLayout="column wrap">
+              <img fxFlex="60" fxFlex.sm="50" fxFlex.xs="40" fxFlexAlign="center"  src="../../assets/phone 2.jpg" class="item_img" alt="cart icon">
+            </div>
+            <div fxFlex="70" fxFlexAlign="start"fxLayout="row wrap">
+              <ul [ngClass.xs]="{'small-body': 'true'}">
+                <li>4600FCFA</li>
+                <li> LIMBE | MILE 4</li>
+                <li>original </li>
+              </ul>
+              <div fxFlex="100" fxFlexOffset="6" fxLayout="row" fxLayoutGap="10">
+                <button mat-flat-button matTooltip="remove from cart">REMOVE</button>
+                <button mat-flat-button matTooltip="share on social media">SHARE</button>
+                <button mat-flat-button matTooltip="add to your favorite ">FAVORITE</button>
+              </div>
+              </div>
+          </div>
+        </div>
+
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-actions align="end" fxShow fxHide.sm="true" fxHide.xs="true">
+          <a href="" mat-raised-button color="accent" class="white-text button-height">CONTINUE SHOPPING</a>
+          <a href="" mat-raised-button class="button-height checkout">CHECKOUT  NOW</a>
+      </mat-card-actions>
+      
+  </mat-card>
+  <div class="button-container" fxLayout="row wrap" fxHide fxShow.xs="true" fxShow.sm="true">
+    <a href="" mat-raised-button color="accent" class="white-text" fxFlex="50" fxFlexFill>CHECKOUT</a>
+    <a href="" mat-raised-button fxFlex="50" fxFlexFill>CONTINUE SHOPPING</a>
+
+  </div>
+  </div>
+</div>

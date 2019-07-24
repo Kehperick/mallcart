@@ -1,0 +1,92 @@
+<div class="main" fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="10px">
+  <div class="left-panel"  fxFlex="20" fxShow fxHide.xs="true" fxHide.sm="true">
+    <!-- <mat-card>
+        <mat-card-header>
+            <mat-card-title color="primary">Sort and Filter</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content  style="padding-top: 20px;">
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <mat-form-field class="mat-subheading-3" fxFlex="100" fxFlexFill>
+                <mat-select placeholder="sort By">
+                  <mat-option value=" low to high"> low to high</mat-option>
+                  <mat-option value=" high to low"> high to low</mat-option>
+                  <mat-option value=" oldest first"> oldest first</mat-option>
+                  <mat-option value=" newest first"> newest first</mat-option>
+                </mat-select>
+              </mat-form-field>
+                                                    
+            </div><br>
+            <form action="" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="10px" method="get">
+              <span fxFlex="100">Price</span>
+              <ng5-slider [(value)]="value" [options]="options"></ng5-slider>
+            
+            </form>
+        </mat-card-content>
+        
+        <mat-card-actions align="center" fxLayout="row" fxLayoutAlign="center center">
+            <button mat-raised-button fxFlex="100" color="primary">APPLY</button>
+            
+        </mat-card-actions>
+    </mat-card> -->
+  </div>
+  <div fxFlex="75" fxFlex.sm="95" fxFlex.xs="98" fxLayout="row wrap" fxLayoutAlign="start start" >
+    <mat-card fxFlexFill fxFlex="100">
+        <mat-card-header>
+            <mat-card-title>Electronics</mat-card-title>
+          </mat-card-header>
+          <mat-divider></mat-divider>
+        <mat-card-content>
+         <div class="item-container" fxLayout="row wrap" fxLayoutAlign="start start" >
+           <div class="s-item " fxFlex="15em" fxLayout="column" style="height:25em;"
+           fxLayoutGap="10px" fxShow fxHide.xs="true"  fxHide.sm="true"
+           matRipple matRippleRadius="40"  fxLayoutAlign="start center">
+            <div fxFlex="60"  fxFlexAlign="center" fxLayout="column" fxLayoutAlign="center center">
+              <img lazyLoad="../../assets/phone 1.jpg"  fxFlex="80" fxFlexAlign="center" alt="">
+            </div>
+           <div class="more_info" fxFlex="30" fxFlexFill fxFlexAlign="center" fxLayout="column" fxLayoutAlign="center center">
+           <div fxFlex="40" class="mat-title item_name">
+             SAMSUNG S9 NEW 
+           </div>
+           <div fxFlex="30" class="mat-subheading-4 price">
+             40000FCFA
+           </div>
+           <div fxFlex="30">
+             Electronica.Inc
+           </div>
+           </div>
+          
+              <div fxFlex="10" fxFlexAlign="center">
+                 <span class="grey-text">Cameroon</span> | 
+                 <span class=" verified">verified</span> 
+                </div>
+           </div>
+
+           <div fxHide fxShow.sm="true" fxShow.xs="true" class="small-item" matRipple  [ngClass.sm]="{'small-item-1':true}"  fxLayout="row" fxLayoutAlign="center center" fxFlex="100">
+            <div fxFlex="40" fxLayout="row wrap "  fxLayoutAlign="center center">
+              <img fxFlex="80" fxFlexAlign="left" lazyLoad="../../assets/phone 2.jpg" alt="" srcset="">
+            </div>
+            <div fxFlex="60" fxLayout="column" fxLayoutAlign="start start"  style="height: 10em;" >
+              <div class="small-title " fxFlex="20" class="mat-subheading-4" style="font-weight: bold;">
+                LENOVO IPAD LAPTOP
+              </div>
+              <div fxFlex="20" style="font-size: 105%;">
+                548000
+              </div>
+              <div fxFlex="20"  class="mat-subheading-4">
+                Electronica.Inc
+              </div>
+              <div fxFlex="20"  class="mat-subheading-4">
+                  <span class="grey-text">Cameroon</span> | 
+                  <span class=" verified" style="font-size: 80%;">verified</span> 
+              </div>
+            </div>
+           
+           </div>
+         </div>
+        </mat-card-content>
+       
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,25 @@
+.main-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 15em;
+    background: white;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .321);
+}
+form input{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 3em;
+    font-size: 14px;
+    font-family: 'Roboto','Lato';
+    border: 1px solid rgba($color: #e7e7e7, $alpha: 1.0)
+}
+form input::placeholder{
+    color: rgb(49, 48, 48);
+}

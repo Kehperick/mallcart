@@ -1,0 +1,67 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+<mat-card fxFlex="80" style="min-height: 30em;">
+  <mat-card-header>
+      <mat-card-title>Own Your Shop</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content fxLayout="row wrap" fxLayoutAlign="center center" >
+      <mat-form-field fxFlex="100" appearance="outline">
+          <mat-label>Shop name</mat-label>
+          <input matInput placeholder="shop name">
+          
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100" appearance="outline">
+          <mat-label>shop description</mat-label>
+          <textarea type="text" matInput placeholder="show description"></textarea>
+          
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100" appearance="outline">
+          <mat-label>Shop Location</mat-label>
+          <input matInput placeholder="shop location">
+          
+        </mat-form-field>
+
+        <mat-form-field fxFlex="80">
+          <mat-label>Shop category</mat-label>
+          <mat-select>
+            <mat-option value="Electronics">Electronics</mat-option>
+            <mat-option value="Home Appliance">Home Appliance</mat-option>
+            <mat-option value="Cosmentics">Cosmetics</mat-option>
+            <mat-option value="Furniture">Furniture</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+          <mat-label>phone number</mat-label>
+          <input matInput type="tel" placeholder="phone number">
+          
+        </mat-form-field>
+
+        <mat-radio-group  fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center center" aria-label="Select an option">
+          <mat-radio-button fxFlex="30"  color="primary" value="1">BASIC </mat-radio-button> 
+          <mat-radio-button fxFlex="30" color="primary" value="2"> GOLD</mat-radio-button>
+          <mat-radio-button fxFlex="30" color="primary" value="3">PLATINUM</mat-radio-button>
+        </mat-radio-group>
+<mat-card>
+  <mat-card-header>
+      <mat-card-title>Info</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    With the {{accountType}} account, we charge you {{amount}}FCFA monthly and it comes with its benefits
+    <a href="">ReadMore</a>
+  </mat-card-content>
+  <mat-card-actions align="end">
+      <button mat-button color="primary" >Accept</button>        
+  </mat-card-actions>
+</mat-card>
+  </mat-card-content>
+  <mat-card-actions align="center" fxLayout="row" fxLayoutAlign="center center">
+      <button mat-raised-button class="white-text" style="height:3.5em;" fxFlex="90" color="accent">START SELLING</button>
+      
+  </mat-card-actions>
+  <mat-card-footer>
+      
+  </mat-card-footer>
+</mat-card>
+</div>

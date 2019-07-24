@@ -1,0 +1,29 @@
+.section-2{
+    width: 100%;
+    height: 60vh;
+    background: red;
+    background-image: url(../../assets/resort_hotels_fires_coast_platform_ladder_evening_26760_1920x1200.jpg);
+}
+.section-2 form input{
+    border: none;
+    height: 3.2em;
+    outline: none;
+    padding-left: 10px;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .324);
+    font-size: 15px;
+    
+}
+.section-2 form input::placeholder{
+    color: grey;
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+button{
+    height: 3.5em;
+    color: white;
+    border-radius: 1px;
+}
+.section-3{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

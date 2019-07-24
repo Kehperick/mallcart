@@ -1,0 +1,55 @@
+.s-item{
+    cursor: pointer;
+    background: #fff;
+  border-radius: 2px;
+  margin-top: 20px;
+  height:25em;
+  :hover > .item_name{
+      color: blue;
+  }
+
+  .small-height{
+      height: 20em;
+  }
+  
+}
+.padding-5{
+    padding: 5px;
+}
+.padding-10{
+    padding: 10px;
+}
+
+.height-sm{
+    height: 15em;
+}
+.s-item:hover{
+    z-index: 3;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.07), 0 0px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.no-border-radius{
+    border-radius: 0%;
+}
+.verified{
+    background: rgb(56,142,60);
+    color: white;
+    border-radius: 20px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price{
+    font-size: 130%;
+}
+.small-item{
+    height: 10em;
+}
+.small-item-2{
+    height: 15em;
+}
+.small-item:hover{
+    .small-title{
+        color: #2962ff
+    }
+}

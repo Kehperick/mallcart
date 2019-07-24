@@ -1,0 +1,46 @@
+.main{
+    margin-bottom: 30px;
+}
+.button-height{
+    height: 3.2em;
+    padding-top: .4%
+}
+.checkout{
+    min-width: 20%;
+}
+.content{
+    padding-top: 5px;
+}
+.item{
+    margin-top: 5px;
+    height: 15em;
+}
+.header{
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.item_img{
+     height: auto;
+    }
+         ul li{
+             margin-top: 4px;
+
+            }
+ul li:first-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+.xtra-smallscreen{
+    font-size: 100%;
+}
+.button-container{
+    height: 3.2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    a{
+        padding-top: 1.2%;
+    }
+}
