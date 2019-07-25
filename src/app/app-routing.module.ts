@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: 'search', component: SearchMobileComponent},
   {path: 'item-detail', component: ItemDetailComponent},
   {path: 'cart', component: CartComponent},
-  {path: '', component: ItemDetailComponent}
+  {path: '', component: ItemDetailComponent, pathMatch: 'full'}
 
 ];
 
