@@ -24,7 +24,8 @@ const routes: Routes = [
   {path: 'forms', component: MainFormComponent},
   {path: 'search', component: SearchMobileComponent},
   {path: 'item-detail', component: ItemDetailComponent},
-  {path: 'cart', component: CartComponent}
+  {path: 'cart', component: CartComponent},
+  {path: '', component: ItemDetailComponent}
 
 ];
 
@@ -33,7 +34,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Components = {
+export const Components = [
   HeaderComponent,
   LoginFormComponent,
   MainFormComponent,
@@ -49,4 +50,4 @@ export const Components = {
   MainHomeComponent,
   AddBusinessComponent,
   SellFormComponent
-}
+]
