@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-login-form',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
-  ngOnInit() {
-  }
+
+   ngOnInit() {
+
+   }
+   loginSnackBar() {
+     this.snackBar.open('login successful', '', {
+       horizontalPosition: 'center',
+       politeness: 'polite'
+     });
+   }
 
 }

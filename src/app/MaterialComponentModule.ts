@@ -10,7 +10,9 @@ import {
      MatRippleModule,
      MatSelectModule,
      MatToolbarModule,
-     MatRadioModule
+     MatRadioModule,
+     MatSnackBarModule,
+     MatButtonToggleModule,
 
 } from '@angular/material';
 import { NgModule } from '@angular/core';
@@ -28,7 +30,9 @@ import { NgModule } from '@angular/core';
         MatRippleModule,
         MatSelectModule,
         MatToolbarModule,
-        MatRadioModule
+        MatRadioModule,
+        MatSnackBarModule,
+        MatButtonToggleModule
     ],
     exports:    [
         MatButtonModule,
@@ -42,7 +46,9 @@ import { NgModule } from '@angular/core';
         MatRippleModule,
         MatSelectModule,
         MatToolbarModule,
-        MatRadioModule
+        MatRadioModule,
+        MatSnackBarModule,
+        MatButtonToggleModule
     ]
 })
 

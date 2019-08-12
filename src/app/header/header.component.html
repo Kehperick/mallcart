@@ -18,10 +18,10 @@
       </div>
 
       <div class="" style="margin-right:-10px;" fxLayout="row-reverse"  fxShow fxHide.sm="true" fxHide.xs="true" fxLayoutGap="5px" fxFlex="30" fxFlexAlign="center"  >
-        <a href="" class="primary white-text" mat-flat-button>LOGIN</a>
+        <a href="" class="primary white-text" mat-flat-button [routerLink]="['/forms']" routerLinkActive="router-link-active" >LOGIN</a>
         <a href="" class="primary white-text" mat-flat-button>START SELLING</a>
-        <a href="" class="primary white-text" mat-flat-button>CART</a>
-        
+        <a href="" class="primary white-text" mat-flat-button [routerLink]="['/cart']" routerLinkActive="router-link-active" >CART</a>
+
       </div>
 
       <div  style="margin-right:-10px;" fxLayout="row-reverse" fxFlex="40"  fxHide fxShow.sm="true" fxShow.xs="true"  fxLayoutGap="5px"  fxFlexAlign="center"  >
@@ -37,5 +37,5 @@
         </button>
         </div>
   </mat-toolbar>
-  
-</div> 
+
+</div>

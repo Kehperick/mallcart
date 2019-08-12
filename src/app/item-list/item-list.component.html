@@ -1,44 +1,35 @@
 <div class="main" fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="10px">
   <div class="left-panel"  fxFlex="20" fxShow fxHide.xs="true" fxHide.sm="true">
-    <!-- <mat-card>
-        <mat-card-header>
-            <mat-card-title color="primary">Sort and Filter</mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content  style="padding-top: 20px;">
-          <div fxLayout="row" fxLayoutAlign="center center">
-            <mat-form-field class="mat-subheading-3" fxFlex="100" fxFlexFill>
-                <mat-select placeholder="sort By">
-                  <mat-option value=" low to high"> low to high</mat-option>
-                  <mat-option value=" high to low"> high to low</mat-option>
-                  <mat-option value=" oldest first"> oldest first</mat-option>
-                  <mat-option value=" newest first"> newest first</mat-option>
-                </mat-select>
-              </mat-form-field>
-                                                    
-            </div><br>
-            <form action="" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="10px" method="get">
-              <span fxFlex="100">Price</span>
-              <ng5-slider [(value)]="value" [options]="options"></ng5-slider>
-            
-            </form>
-        </mat-card-content>
-        
-        <mat-card-actions align="center" fxLayout="row" fxLayoutAlign="center center">
-            <button mat-raised-button fxFlex="100" color="primary">APPLY</button>
-            
-        </mat-card-actions>
-    </mat-card> -->
+
   </div>
   <div fxFlex="75" fxFlex.sm="95" fxFlex.xs="98" fxLayout="row wrap" fxLayoutAlign="start start" >
     <mat-card fxFlexFill fxFlex="100">
         <mat-card-header>
             <mat-card-title>Electronics</mat-card-title>
+
           </mat-card-header>
           <mat-divider></mat-divider>
         <mat-card-content>
+          <div class="sorting-container" style="height:3.2em;" fxLayout="row wrap" fxLayoutAlign="start center" fxShow fxHide.sm="true" fxHide.xs="true" >
+
+
+            <div class="content"  style="font-weight:bold;color:black" fxFlex="10">
+              Sort By
+            </div>
+            <div class="content" fxFlex="90">
+                <mat-button-toggle-group #sortgroup="matButtonToggleGroup" (click)="getToggleElement(sortgroup.value)"  appearance="standard" style="box-shadow:none;border-color:white;height:3em;
+                margin-top:.1em;" name="fontStyle" aria-label="Font Style">
+                    <mat-button-toggle value="popularity">Popularity</mat-button-toggle>
+                    <mat-button-toggle value="Price Low - High">Price Low - High</mat-button-toggle>
+                    <mat-button-toggle value="Price High - Low">Price High - Low</mat-button-toggle>
+                  </mat-button-toggle-group>
+
+            </div>
+
+
+          </div>
          <div class="item-container" fxLayout="row wrap" fxLayoutAlign="start start" >
-           <div class="s-item " fxFlex="15em" fxLayout="column" style="height:25em;"
+           <div class="s-item " *ngFor="let item of productList" fxFlex="15em" fxLayout="column" style="height:26em;"
            fxLayoutGap="10px" fxShow fxHide.xs="true"  fxHide.sm="true"
            matRipple matRippleRadius="40"  fxLayoutAlign="start center">
             <div fxFlex="60"  fxFlexAlign="center" fxLayout="column" fxLayoutAlign="center center">
@@ -46,19 +37,19 @@
             </div>
            <div class="more_info" fxFlex="30" fxFlexFill fxFlexAlign="center" fxLayout="column" fxLayoutAlign="center center">
            <div fxFlex="40" class="mat-title item_name">
-             SAMSUNG S9 NEW 
+             {{item.name}}
            </div>
            <div fxFlex="30" class="mat-subheading-4 price">
-             40000FCFA
+             {{item.price}}
            </div>
            <div fxFlex="30">
-             Electronica.Inc
+             {{item.seller}}
            </div>
            </div>
-          
+
               <div fxFlex="10" fxFlexAlign="center">
-                 <span class="grey-text">Cameroon</span> | 
-                 <span class=" verified">verified</span> 
+                 <span class="grey-text">{{item.country}}</span> |
+                 <span class=" verified">{{item.isVerified}}</span>
                 </div>
            </div>
 
@@ -77,15 +68,15 @@
                 Electronica.Inc
               </div>
               <div fxFlex="20"  class="mat-subheading-4">
-                  <span class="grey-text">Cameroon</span> | 
-                  <span class=" verified" style="font-size: 80%;">verified</span> 
+                  <span class="grey-text">Cameroon</span> |
+                  <span class=" verified" style="font-size: 80%;">verified</span>
               </div>
             </div>
-           
+
            </div>
          </div>
         </mat-card-content>
-       
+
     </mat-card>
   </div>
 

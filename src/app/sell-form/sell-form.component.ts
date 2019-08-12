@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellFormComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

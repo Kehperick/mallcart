@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-register-form',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {
   }
 
+  notifyRegistration() {
+
+    this.snackBar.open('Registered successfully ', 'OK', {
+      announcementMessage: 'registration state',
+      horizontalPosition: 'right'
+    });
+  }
 }
